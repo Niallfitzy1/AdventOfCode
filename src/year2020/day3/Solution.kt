@@ -1,11 +1,11 @@
-package day3
+package year2020.day3
 
 import java.io.File
 import java.nio.charset.Charset
 
 fun main() {
     val mapData: List<String> =
-        File("src/day3/input").readLines(Charset.defaultCharset())
+        File("src/year2020/day3/input").readLines(Charset.defaultCharset())
 
     val map = Map(mapData)
     val productOfSlopes = listOf<Long>(

@@ -1,11 +1,11 @@
-package day1
+package year2020.day1
 
 import java.io.File
 import java.nio.charset.Charset
 
 fun main() {
     val allNumbers: List<Int> =
-        File("src/day1/input").readLines(Charset.defaultCharset()).map(Integer::valueOf)
+        File("src/year2020/day1/input").readLines(Charset.defaultCharset()).map(Integer::valueOf)
 
     for (i in allNumbers.indices) {
         val firstValue = allNumbers[i]

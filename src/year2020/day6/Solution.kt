@@ -1,11 +1,11 @@
-package day6
+package year2020.day6
 
 import java.io.File
 
 fun main() {
     val groups: MutableList<Group> = mutableListOf()
     val forms: MutableList<Form> = mutableListOf()
-    File("src/day6/input").forEachLine { line ->
+    File("src/year2020/day6/input").forEachLine { line ->
         if (line.isNotEmpty()) forms.add(Form(line.toSet()))
         else {
             groups.add(

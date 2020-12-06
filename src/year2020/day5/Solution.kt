@@ -1,11 +1,11 @@
-package day5
+package year2020.day5
 
 import java.io.File
 
 fun main() {
     val totalRows = 127
     val totalColumns = 7
-    val passes = File("src/day5/input").readLines().map { BoardingPass(it.take(7), it.takeLast(3)) }
+    val passes = File("src/year2020/day5/input").readLines().map { BoardingPass(it.take(7), it.takeLast(3)) }
     var largestId = 0
     val seatIds = passes.map {
         var rowRange = 0..totalRows

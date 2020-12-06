@@ -1,4 +1,4 @@
-package day4
+package year2020.day4
 
 import com.github.ajalt.mordant.TermColors
 import java.io.File
@@ -6,7 +6,7 @@ import java.io.File
 fun main() {
     val passports: MutableList<Passport> = mutableListOf()
     val fields: MutableList<Field> = mutableListOf()
-    File("src/day4/input").forEachLine { line ->
+    File("src/year2020/day4/input").forEachLine { line ->
         if (line.isNotEmpty()) {
             line.split(' ').map { rawField ->
                 val splitField = rawField.split(':')

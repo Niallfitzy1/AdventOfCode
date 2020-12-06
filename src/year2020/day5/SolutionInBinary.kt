@@ -1,9 +1,9 @@
-package day5
+package year2020.day5
 
 import java.io.File
 
 fun main() {
-    val passes = File("src/day5/input").readLines()
+    val passes = File("src/year2020/day5/input").readLines()
     val seatIds = passes.map { boardingPass ->
         val asBinaryString = boardingPass
             .replace('F', '0')
